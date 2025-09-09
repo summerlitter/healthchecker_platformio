@@ -13,7 +13,7 @@ const char* password = "12345678";
 const char* mqttHostUrl = "iot-06z00i9gvlpckb9.mqtt.iothub.aliyuncs.com";
 const int mqttPort = 1883;
 const char* mqttUser = "esp32s3&k2acmy6ouFy";
-const char* mqttPassword = "e0eb00d66e48d33e31c1d1936d09f3eb039e808031fb8080e44b84939ff83de5";
+const char* mqttPassword = "e0eb00d66e48d33e31c1d************************84939ff83de5";
 const char* clientId = "k2acmy6ouFy.esp32s3|securemode=2,signmethod=hmacsha256,timestamp=1756826695375|";
 // 注 阿里云在连接成功后密钥可与对应时间戳id保持不变 无需调用库计算 详见阿里云提供的动态连接一机一密的那个说明手册  
 //若是用tls sha256加密可用bearssl 计算 注意13位时间戳精度
@@ -213,4 +213,5 @@ void mqttIntervalPost() {
   } else {
     Serial.println("MQTT Publish Failed!");
   }
+
 }
